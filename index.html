@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Student Management</h1>
+
+  <h2>Add Student</h2>
+  <form id="addStudentForm">
+    <label for="regId">Registration ID:</label>
+    <input type="text" id="regId" name="regId" required><br>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="gender">Gender:</label>
+    <input type="text" id="gender" name="gender" required><br>
+
+    <label for="department">Department:</label>
+    <input type="text" id="department" name="department" required><br>
+
+    <button type="button" onclick="addStudent()">Add Student</button>
+  </form>
+
+  <h2>Students</h2>
+  <ul id="studentList"></ul>
+
+  <script src="./clientSide.js">
+  </script>
+</body>
+</html>
